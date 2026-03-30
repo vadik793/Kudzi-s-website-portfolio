@@ -1,0 +1,90 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+header{
+background:#333;
+color:white;
+padding:15px;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+text-align:center;
+padding:50px;
+}
+
+.hero img{
+width:150px;
+border-radius:50%;
+}
+
+.btn{
+background:#007BFF;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+}
+
+.projects .grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+border:1px solid #ddd;
+padding:20px;
+text-align:center;
+}
+
+.contact form{
+display:flex;
+flex-direction:column;
+width:300px;
+margin:auto;
+}
+
+.contact input, textarea{
+margin-bottom:10px;
+padding:10px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#333;
+color:white;
+margin-top:20px;
+}
+
+.skills .bar{
+height:10px;
+background:#007BFF;
+}
+
+.html{width:90%}
+.css{width:80%}
+.js{width:70%}

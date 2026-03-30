@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Like Button</title>
+</head>
+<body id="body">
+
+    <h2>Like Button 👍</h2>
+
+    <!-- Button -->
+    <button onclick="addLike()">Like ❤️</button>
+
+    <!-- Display count -->
+    <p id="likeCount">Likes: 0</p>
+
+    <!-- Celebration message -->
+    <h3 id="message"></h3>
+
+    <script>
+        let count = 0;
+
+        function addLike() {
+            count++;
+            document.getElementById("likeCount").innerText = "Likes: " + count;
+
+            // When it reaches 10
+            if (count === 10) {
+                document.getElementById("message").innerText = "🎉 Wow! 10 Likes! You're amazing!";
+                document.getElementById("body").style.backgroundColor = "lightgreen";
+            }
+        }
+    </script>
+
+</body>
+</html>
